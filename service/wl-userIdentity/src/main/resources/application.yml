@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: user-identity-service
+  profiles:
+    active: "dev"
+
+server:
+  port: 6001
+
+logging:
+  file:
+    path: "log"

@@ -1,0 +1,603 @@
+2022-12-10T04:50:34.161+05:30  INFO 3588 --- [main] c.n.w.WlUserIdentityApplication          : Starting WlUserIdentityApplication using Java 17.0.2 with PID 3588 (C:\Career\Code\full projects\whitelabel\wl-userIdentity\target\classes started by Nishi in C:\Career\Code\full projects\whitelabel\wl-userIdentity)
+2022-12-10T04:50:34.166+05:30  INFO 3588 --- [main] c.n.w.WlUserIdentityApplication          : The following 1 profile is active: "dev"
+2022-12-10T04:50:35.939+05:30  INFO 3588 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 6001 (http)
+2022-12-10T04:50:35.965+05:30  INFO 3588 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-10T04:50:35.965+05:30  INFO 3588 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-12-10T04:50:36.140+05:30  INFO 3588 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-10T04:50:36.141+05:30  INFO 3588 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1884 ms
+2022-12-10T04:50:36.906+05:30  INFO 3588 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 6001 (http) with context path ''
+2022-12-10T04:50:36.926+05:30  INFO 3588 --- [main] c.n.w.WlUserIdentityApplication          : Started WlUserIdentityApplication in 3.647 seconds (process running for 4.354)
+2022-12-10T04:52:56.274+05:30  INFO 20372 --- [main] c.n.w.WlUserIdentityApplication          : Starting WlUserIdentityApplication using Java 17.0.2 with PID 20372 (C:\Career\Code\full projects\whitelabel\wl-userIdentity\target\classes started by Nishi in C:\Career\Code\full projects\whitelabel\wl-userIdentity)
+2022-12-10T04:52:56.287+05:30  INFO 20372 --- [main] c.n.w.WlUserIdentityApplication          : The following 1 profile is active: "dev"
+2022-12-10T04:52:57.259+05:30  INFO 20372 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-10T04:52:57.308+05:30  INFO 20372 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29 ms. Found 0 JPA repository interfaces.
+2022-12-10T04:52:58.495+05:30  INFO 20372 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 6001 (http)
+2022-12-10T04:52:58.514+05:30  INFO 20372 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-10T04:52:58.514+05:30  INFO 20372 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-12-10T04:52:58.696+05:30  INFO 20372 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-10T04:52:58.697+05:30  INFO 20372 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2336 ms
+2022-12-10T04:52:58.826+05:30  WARN 20372 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Cannot load driver class: com.mysql.cj.jdbc.Driver
+2022-12-10T04:52:58.832+05:30  INFO 20372 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-12-10T04:52:58.859+05:30  INFO 20372 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2022-12-10T04:52:58.896+05:30 ERROR 20372 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:793) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:543) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1324) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1161) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:561) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1130) ~[spring-context-6.0.2.jar:6.0.2]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:905) ~[spring-context-6.0.2.jar:6.0.2]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584) ~[spring-context-6.0.2.jar:6.0.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.0.0.jar:3.0.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730) ~[spring-boot-3.0.0.jar:3.0.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432) ~[spring-boot-3.0.0.jar:3.0.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-3.0.0.jar:3.0.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302) ~[spring-boot-3.0.0.jar:3.0.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291) ~[spring-boot-3.0.0.jar:3.0.0]
+	at com.nishiProductions.wluserIdentity.WlUserIdentityApplication.main(WlUserIdentityApplication.java:10) ~[classes/:na]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:652) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:640) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1324) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1161) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:561) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1405) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1325) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:880) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:784) ~[spring-beans-6.0.2.jar:6.0.2]
+	... 21 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:171) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:648) ~[spring-beans-6.0.2.jar:6.0.2]
+	... 35 common frames omitted
+Caused by: java.lang.IllegalStateException: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.util.Assert.state(Assert.java:97) ~[spring-core-6.0.2.jar:6.0.2]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.determineDriverClassName(DataSourceProperties.java:171) ~[spring-boot-autoconfigure-3.0.0.jar:3.0.0]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.initializeDataSourceBuilder(DataSourceProperties.java:123) ~[spring-boot-autoconfigure-3.0.0.jar:3.0.0]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration.createDataSource(DataSourceConfiguration.java:48) ~[spring-boot-autoconfigure-3.0.0.jar:3.0.0]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari.dataSource(DataSourceConfiguration.java:90) ~[spring-boot-autoconfigure-3.0.0.jar:3.0.0]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:139) ~[spring-beans-6.0.2.jar:6.0.2]
+	... 36 common frames omitted
+
+2022-12-10T04:55:32.242+05:30  INFO 16568 --- [main] c.n.w.WlUserIdentityApplication          : Starting WlUserIdentityApplication using Java 17.0.2 with PID 16568 (C:\Career\Code\full projects\whitelabel\wl-userIdentity\target\classes started by Nishi in C:\Career\Code\full projects\whitelabel\wl-userIdentity)
+2022-12-10T04:55:32.244+05:30  INFO 16568 --- [main] c.n.w.WlUserIdentityApplication          : The following 1 profile is active: "dev"
+2022-12-10T04:55:34.113+05:30  INFO 16568 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 6001 (http)
+2022-12-10T04:55:34.137+05:30  INFO 16568 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-10T04:55:34.137+05:30  INFO 16568 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-12-10T04:55:34.333+05:30  INFO 16568 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-10T04:55:34.333+05:30  INFO 16568 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2010 ms
+2022-12-10T04:55:34.985+05:30  INFO 16568 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 6001 (http) with context path ''
+2022-12-10T04:55:35.004+05:30  INFO 16568 --- [main] c.n.w.WlUserIdentityApplication          : Started WlUserIdentityApplication in 3.55 seconds (process running for 4.334)
+2022-12-10T04:56:01.154+05:30  INFO 15544 --- [main] c.n.w.WlUserIdentityApplication          : Starting WlUserIdentityApplication using Java 17.0.2 with PID 15544 (C:\Career\Code\full projects\whitelabel\wl-userIdentity\target\classes started by Nishi in C:\Career\Code\full projects\whitelabel\wl-userIdentity)
+2022-12-10T04:56:01.158+05:30  INFO 15544 --- [main] c.n.w.WlUserIdentityApplication          : The following 1 profile is active: "dev"
+2022-12-10T04:56:02.661+05:30  INFO 15544 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 6001 (http)
+2022-12-10T04:56:02.692+05:30  INFO 15544 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-10T04:56:02.692+05:30  INFO 15544 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-12-10T04:56:02.843+05:30  INFO 15544 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-10T04:56:02.843+05:30  INFO 15544 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1614 ms
+2022-12-10T04:56:03.376+05:30  INFO 15544 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 6001 (http) with context path ''
+2022-12-10T04:56:03.390+05:30  INFO 15544 --- [main] c.n.w.WlUserIdentityApplication          : Started WlUserIdentityApplication in 3.043 seconds (process running for 3.722)
+2022-12-10T04:57:02.459+05:30  INFO 15424 --- [main] c.n.w.WlUserIdentityApplication          : Starting WlUserIdentityApplication using Java 17.0.2 with PID 15424 (C:\Career\Code\full projects\whitelabel\wl-userIdentity\target\classes started by Nishi in C:\Career\Code\full projects\whitelabel\wl-userIdentity)
+2022-12-10T04:57:02.471+05:30  INFO 15424 --- [main] c.n.w.WlUserIdentityApplication          : The following 1 profile is active: "dev"
+2022-12-10T04:57:03.372+05:30  INFO 15424 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-10T04:57:03.411+05:30  INFO 15424 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 0 JPA repository interfaces.
+2022-12-10T04:57:04.394+05:30  INFO 15424 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 6001 (http)
+2022-12-10T04:57:04.416+05:30  INFO 15424 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-10T04:57:04.417+05:30  INFO 15424 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-12-10T04:57:04.573+05:30  INFO 15424 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-10T04:57:04.573+05:30  INFO 15424 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2030 ms
+2022-12-10T04:57:04.672+05:30  WARN 15424 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Cannot load driver class: com.mysql.cj.jdbc.Driver
+2022-12-10T04:57:04.680+05:30  INFO 15424 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-12-10T04:57:04.694+05:30  INFO 15424 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2022-12-10T04:57:04.727+05:30 ERROR 15424 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:793) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:543) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1324) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1161) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:561) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1130) ~[spring-context-6.0.2.jar:6.0.2]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:905) ~[spring-context-6.0.2.jar:6.0.2]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584) ~[spring-context-6.0.2.jar:6.0.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.0.0.jar:3.0.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730) ~[spring-boot-3.0.0.jar:3.0.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432) ~[spring-boot-3.0.0.jar:3.0.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-3.0.0.jar:3.0.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302) ~[spring-boot-3.0.0.jar:3.0.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291) ~[spring-boot-3.0.0.jar:3.0.0]
+	at com.nishiProductions.wluserIdentity.WlUserIdentityApplication.main(WlUserIdentityApplication.java:10) ~[classes/:na]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:652) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:640) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1324) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1161) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:561) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1405) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1325) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:880) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:784) ~[spring-beans-6.0.2.jar:6.0.2]
+	... 21 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:171) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:648) ~[spring-beans-6.0.2.jar:6.0.2]
+	... 35 common frames omitted
+Caused by: java.lang.IllegalStateException: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.util.Assert.state(Assert.java:97) ~[spring-core-6.0.2.jar:6.0.2]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.determineDriverClassName(DataSourceProperties.java:171) ~[spring-boot-autoconfigure-3.0.0.jar:3.0.0]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.initializeDataSourceBuilder(DataSourceProperties.java:123) ~[spring-boot-autoconfigure-3.0.0.jar:3.0.0]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration.createDataSource(DataSourceConfiguration.java:48) ~[spring-boot-autoconfigure-3.0.0.jar:3.0.0]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari.dataSource(DataSourceConfiguration.java:90) ~[spring-boot-autoconfigure-3.0.0.jar:3.0.0]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:139) ~[spring-beans-6.0.2.jar:6.0.2]
+	... 36 common frames omitted
+
+2022-12-10T04:58:04.730+05:30  INFO 16796 --- [main] c.n.w.WlUserIdentityApplication          : Starting WlUserIdentityApplication using Java 17.0.2 with PID 16796 (C:\Career\Code\full projects\whitelabel\wl-userIdentity\target\classes started by Nishi in C:\Career\Code\full projects\whitelabel\wl-userIdentity)
+2022-12-10T04:58:04.740+05:30  INFO 16796 --- [main] c.n.w.WlUserIdentityApplication          : The following 1 profile is active: "dev"
+2022-12-10T04:58:06.568+05:30  INFO 16796 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-10T04:58:06.672+05:30  INFO 16796 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64 ms. Found 0 JPA repository interfaces.
+2022-12-10T04:58:08.743+05:30  INFO 16796 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 6001 (http)
+2022-12-10T04:58:08.774+05:30  INFO 16796 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-10T04:58:08.774+05:30  INFO 16796 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-12-10T04:58:09.057+05:30  INFO 16796 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-10T04:58:09.061+05:30  INFO 16796 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4166 ms
+2022-12-10T04:58:09.234+05:30  WARN 16796 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Cannot load driver class: com.mysql.cj.jdbc.Driver
+2022-12-10T04:58:09.243+05:30  INFO 16796 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-12-10T04:58:09.301+05:30  INFO 16796 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2022-12-10T04:58:09.365+05:30 ERROR 16796 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:793) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:543) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1324) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1161) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:561) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1130) ~[spring-context-6.0.2.jar:6.0.2]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:905) ~[spring-context-6.0.2.jar:6.0.2]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584) ~[spring-context-6.0.2.jar:6.0.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.0.0.jar:3.0.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730) ~[spring-boot-3.0.0.jar:3.0.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432) ~[spring-boot-3.0.0.jar:3.0.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-3.0.0.jar:3.0.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302) ~[spring-boot-3.0.0.jar:3.0.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291) ~[spring-boot-3.0.0.jar:3.0.0]
+	at com.nishiProductions.wluserIdentity.WlUserIdentityApplication.main(WlUserIdentityApplication.java:10) ~[classes/:na]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:652) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:640) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1324) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1161) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:561) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1405) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1325) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:880) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:784) ~[spring-beans-6.0.2.jar:6.0.2]
+	... 21 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:171) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:648) ~[spring-beans-6.0.2.jar:6.0.2]
+	... 35 common frames omitted
+Caused by: java.lang.IllegalStateException: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.util.Assert.state(Assert.java:97) ~[spring-core-6.0.2.jar:6.0.2]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.determineDriverClassName(DataSourceProperties.java:171) ~[spring-boot-autoconfigure-3.0.0.jar:3.0.0]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.initializeDataSourceBuilder(DataSourceProperties.java:123) ~[spring-boot-autoconfigure-3.0.0.jar:3.0.0]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration.createDataSource(DataSourceConfiguration.java:48) ~[spring-boot-autoconfigure-3.0.0.jar:3.0.0]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari.dataSource(DataSourceConfiguration.java:90) ~[spring-boot-autoconfigure-3.0.0.jar:3.0.0]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:139) ~[spring-beans-6.0.2.jar:6.0.2]
+	... 36 common frames omitted
+
+2022-12-10T04:58:52.047+05:30  INFO 22092 --- [main] c.n.w.WlUserIdentityApplication          : Starting WlUserIdentityApplication using Java 17.0.2 with PID 22092 (C:\Career\Code\full projects\whitelabel\wl-userIdentity\target\classes started by Nishi in C:\Career\Code\full projects\whitelabel\wl-userIdentity)
+2022-12-10T04:58:52.056+05:30  INFO 22092 --- [main] c.n.w.WlUserIdentityApplication          : The following 1 profile is active: "dev"
+2022-12-10T04:58:53.850+05:30  INFO 22092 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-10T04:58:53.927+05:30  INFO 22092 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 0 JPA repository interfaces.
+2022-12-10T04:58:55.739+05:30  INFO 22092 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 6001 (http)
+2022-12-10T04:58:55.758+05:30  INFO 22092 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-10T04:58:55.758+05:30  INFO 22092 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-12-10T04:58:56.017+05:30  INFO 22092 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-10T04:58:56.019+05:30  INFO 22092 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3830 ms
+2022-12-10T04:58:56.162+05:30  WARN 22092 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Cannot load driver class: com.mysql.cj.jdbc.Driver
+2022-12-10T04:58:56.173+05:30  INFO 22092 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-12-10T04:58:56.215+05:30  INFO 22092 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2022-12-10T04:58:56.273+05:30 ERROR 22092 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:793) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:543) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1324) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1161) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:561) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1130) ~[spring-context-6.0.2.jar:6.0.2]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:905) ~[spring-context-6.0.2.jar:6.0.2]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584) ~[spring-context-6.0.2.jar:6.0.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.0.0.jar:3.0.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730) ~[spring-boot-3.0.0.jar:3.0.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432) ~[spring-boot-3.0.0.jar:3.0.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-3.0.0.jar:3.0.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302) ~[spring-boot-3.0.0.jar:3.0.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291) ~[spring-boot-3.0.0.jar:3.0.0]
+	at com.nishiProductions.wluserIdentity.WlUserIdentityApplication.main(WlUserIdentityApplication.java:10) ~[classes/:na]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:652) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:640) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1324) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1161) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:561) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1405) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1325) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:880) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:784) ~[spring-beans-6.0.2.jar:6.0.2]
+	... 21 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:171) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:648) ~[spring-beans-6.0.2.jar:6.0.2]
+	... 35 common frames omitted
+Caused by: java.lang.IllegalStateException: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.util.Assert.state(Assert.java:97) ~[spring-core-6.0.2.jar:6.0.2]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.determineDriverClassName(DataSourceProperties.java:171) ~[spring-boot-autoconfigure-3.0.0.jar:3.0.0]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.initializeDataSourceBuilder(DataSourceProperties.java:123) ~[spring-boot-autoconfigure-3.0.0.jar:3.0.0]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration.createDataSource(DataSourceConfiguration.java:48) ~[spring-boot-autoconfigure-3.0.0.jar:3.0.0]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari.dataSource(DataSourceConfiguration.java:90) ~[spring-boot-autoconfigure-3.0.0.jar:3.0.0]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:139) ~[spring-beans-6.0.2.jar:6.0.2]
+	... 36 common frames omitted
+
+2022-12-10T05:00:06.836+05:30  INFO 12220 --- [main] c.n.w.WlUserIdentityApplication          : Starting WlUserIdentityApplication using Java 17.0.2 with PID 12220 (C:\Career\Code\full projects\whitelabel\wl-userIdentity\target\classes started by Nishi in C:\Career\Code\full projects\whitelabel\wl-userIdentity)
+2022-12-10T05:00:06.844+05:30  INFO 12220 --- [main] c.n.w.WlUserIdentityApplication          : The following 1 profile is active: "dev"
+2022-12-10T05:00:08.396+05:30  INFO 12220 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-10T05:00:08.456+05:30  INFO 12220 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32 ms. Found 0 JPA repository interfaces.
+2022-12-10T05:00:10.261+05:30  INFO 12220 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 6001 (http)
+2022-12-10T05:00:10.290+05:30  INFO 12220 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-10T05:00:10.291+05:30  INFO 12220 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-12-10T05:00:10.559+05:30  INFO 12220 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-10T05:00:10.561+05:30  INFO 12220 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3606 ms
+2022-12-10T05:00:10.857+05:30  INFO 12220 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-10T05:00:11.255+05:30  INFO 12220 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6cbe68e9
+2022-12-10T05:00:11.259+05:30  INFO 12220 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-10T05:00:11.369+05:30  INFO 12220 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-10T05:00:11.550+05:30  INFO 12220 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.5.Final
+2022-12-10T05:00:12.004+05:30  WARN 12220 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2022-12-10T05:00:12.400+05:30  INFO 12220 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-12-10T05:00:13.038+05:30  INFO 12220 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-10T05:00:13.061+05:30  INFO 12220 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-10T05:00:13.156+05:30  WARN 12220 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-10T05:00:13.872+05:30  INFO 12220 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 6001 (http) with context path ''
+2022-12-10T05:00:13.874+05:30  INFO 12220 --- [main] c.n.w.WlUserIdentityApplication          : Started WlUserIdentityApplication in 8.527 seconds (process running for 9.946)
+2022-12-10T05:00:54.919+05:30  INFO 12220 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-10T05:00:54.934+05:30  INFO 12220 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-12-10T05:00:54.952+05:30  INFO 12220 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-12-10T05:11:10.447+05:30  INFO [user-identity-service,,] 19588 --- [main] c.n.w.WlUserIdentityApplication          : Starting WlUserIdentityApplication using Java 17.0.2 with PID 19588 (C:\Career\Code\full projects\whitelabel\wl-userIdentity\target\classes started by Nishi in C:\Career\Code\full projects\whitelabel\wl-userIdentity)
+2022-12-10T05:11:10.455+05:30  INFO [user-identity-service,,] 19588 --- [main] c.n.w.WlUserIdentityApplication          : The following 1 profile is active: "dev"
+2022-12-10T05:11:11.740+05:30  INFO [user-identity-service,,] 19588 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-10T05:11:11.789+05:30  INFO [user-identity-service,,] 19588 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 0 JPA repository interfaces.
+2022-12-10T05:11:13.024+05:30  INFO [user-identity-service,,] 19588 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 6001 (http)
+2022-12-10T05:11:13.053+05:30  INFO [user-identity-service,,] 19588 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-10T05:11:13.053+05:30  INFO [user-identity-service,,] 19588 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-12-10T05:11:13.260+05:30  INFO [user-identity-service,,] 19588 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-10T05:11:13.262+05:30  INFO [user-identity-service,,] 19588 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2699 ms
+2022-12-10T05:11:13.475+05:30  INFO [user-identity-service,,] 19588 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-10T05:11:13.773+05:30  INFO [user-identity-service,,] 19588 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@76ff68c5
+2022-12-10T05:11:13.782+05:30  INFO [user-identity-service,,] 19588 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-10T05:11:13.854+05:30  INFO [user-identity-service,,] 19588 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-10T05:11:13.962+05:30  INFO [user-identity-service,,] 19588 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.5.Final
+2022-12-10T05:11:14.295+05:30  WARN [user-identity-service,,] 19588 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2022-12-10T05:11:14.606+05:30  INFO [user-identity-service,,] 19588 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-12-10T05:11:15.059+05:30  INFO [user-identity-service,,] 19588 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-10T05:11:15.081+05:30  INFO [user-identity-service,,] 19588 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-10T05:11:15.143+05:30  WARN [user-identity-service,,] 19588 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-10T05:11:15.804+05:30  INFO [user-identity-service,,] 19588 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 6001 (http) with context path ''
+2022-12-10T05:11:15.819+05:30  INFO [user-identity-service,,] 19588 --- [main] c.n.w.WlUserIdentityApplication          : Started WlUserIdentityApplication in 6.539 seconds (process running for 8.751)
+2022-12-10T05:11:29.940+05:30  INFO [user-identity-service,,] 19588 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-10T05:11:29.940+05:30  INFO [user-identity-service,,] 19588 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-12-10T05:11:29.963+05:30  INFO [user-identity-service,,] 19588 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-12-10T05:11:34.163+05:30  INFO [user-identity-service,,] 2780 --- [main] c.n.w.WlUserIdentityApplication          : Starting WlUserIdentityApplication using Java 17.0.2 with PID 2780 (C:\Career\Code\full projects\whitelabel\wl-userIdentity\target\classes started by Nishi in C:\Career\Code\full projects\whitelabel\wl-userIdentity)
+2022-12-10T05:11:34.167+05:30  INFO [user-identity-service,,] 2780 --- [main] c.n.w.WlUserIdentityApplication          : The following 1 profile is active: "dev"
+2022-12-10T05:11:35.158+05:30  INFO [user-identity-service,,] 2780 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-10T05:11:35.210+05:30  INFO [user-identity-service,,] 2780 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36 ms. Found 0 JPA repository interfaces.
+2022-12-10T05:11:36.301+05:30  INFO [user-identity-service,,] 2780 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 6001 (http)
+2022-12-10T05:11:36.323+05:30  INFO [user-identity-service,,] 2780 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-10T05:11:36.324+05:30  INFO [user-identity-service,,] 2780 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-12-10T05:11:36.501+05:30  INFO [user-identity-service,,] 2780 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-10T05:11:36.501+05:30  INFO [user-identity-service,,] 2780 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2256 ms
+2022-12-10T05:11:36.766+05:30  INFO [user-identity-service,,] 2780 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-10T05:11:37.060+05:30  INFO [user-identity-service,,] 2780 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5099c59b
+2022-12-10T05:11:37.065+05:30  INFO [user-identity-service,,] 2780 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-10T05:11:37.147+05:30  INFO [user-identity-service,,] 2780 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-10T05:11:37.246+05:30  INFO [user-identity-service,,] 2780 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.5.Final
+2022-12-10T05:11:37.527+05:30  WARN [user-identity-service,,] 2780 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2022-12-10T05:11:37.775+05:30  INFO [user-identity-service,,] 2780 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-12-10T05:11:38.087+05:30  INFO [user-identity-service,,] 2780 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-10T05:11:38.111+05:30  INFO [user-identity-service,,] 2780 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-10T05:11:38.151+05:30  WARN [user-identity-service,,] 2780 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-10T05:11:38.611+05:30  INFO [user-identity-service,,] 2780 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 6001 (http) with context path ''
+2022-12-10T05:11:38.611+05:30  INFO [user-identity-service,,] 2780 --- [main] c.n.w.WlUserIdentityApplication          : Started WlUserIdentityApplication in 5.439 seconds (process running for 6.45)
+2022-12-10T05:23:31.850+05:30  INFO [user-identity-service,,] 2780 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-10T05:23:31.850+05:30  INFO [user-identity-service,,] 2780 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-12-10T05:23:31.870+05:30  INFO [user-identity-service,,] 2780 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-12-10T05:24:31.948+05:30  INFO [user-identity-service,,] 3156 --- [main] c.n.w.WlUserIdentityApplication          : Starting WlUserIdentityApplication using Java 17.0.2 with PID 3156 (C:\Career\Code\full projects\whitelabel\wl-userIdentity\target\classes started by Nishi in C:\Career\Code\full projects\whitelabel\wl-userIdentity)
+2022-12-10T05:24:31.959+05:30  INFO [user-identity-service,,] 3156 --- [main] c.n.w.WlUserIdentityApplication          : The following 1 profile is active: "dev"
+2022-12-10T05:24:32.936+05:30  INFO [user-identity-service,,] 3156 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-10T05:24:32.968+05:30  INFO [user-identity-service,,] 3156 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 0 JPA repository interfaces.
+2022-12-10T05:24:34.001+05:30  INFO [user-identity-service,,] 3156 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 6001 (http)
+2022-12-10T05:24:34.029+05:30  INFO [user-identity-service,,] 3156 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-10T05:24:34.029+05:30  INFO [user-identity-service,,] 3156 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-12-10T05:24:34.225+05:30  INFO [user-identity-service,,] 3156 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-10T05:24:34.225+05:30  INFO [user-identity-service,,] 3156 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2173 ms
+2022-12-10T05:24:34.470+05:30  INFO [user-identity-service,,] 3156 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-10T05:24:34.763+05:30  INFO [user-identity-service,,] 3156 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@65ef48f2
+2022-12-10T05:24:34.765+05:30  INFO [user-identity-service,,] 3156 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-10T05:24:34.840+05:30  INFO [user-identity-service,,] 3156 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-10T05:24:34.955+05:30  INFO [user-identity-service,,] 3156 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.5.Final
+2022-12-10T05:24:35.206+05:30  WARN [user-identity-service,,] 3156 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2022-12-10T05:24:35.449+05:30  INFO [user-identity-service,,] 3156 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-12-10T05:24:35.801+05:30  INFO [user-identity-service,,] 3156 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-10T05:24:35.803+05:30  INFO [user-identity-service,,] 3156 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-10T05:24:35.883+05:30  WARN [user-identity-service,,] 3156 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-10T05:24:36.328+05:30  INFO [user-identity-service,,] 3156 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 6001 (http) with context path ''
+2022-12-10T05:24:36.344+05:30  INFO [user-identity-service,,] 3156 --- [main] c.n.w.WlUserIdentityApplication          : Started WlUserIdentityApplication in 5.413 seconds (process running for 6.504)
+2022-12-10T06:12:49.799+05:30  INFO [user-identity-service,,] 3156 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-10T06:12:49.829+05:30  INFO [user-identity-service,,] 3156 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-12-10T06:12:49.835+05:30  INFO [user-identity-service,,] 3156 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-12-10T06:20:40.013+05:30  INFO [user-identity-service,,] 15944 --- [main] c.n.w.WlUserIdentityApplication          : Starting WlUserIdentityApplication using Java 17.0.2 with PID 15944 (C:\Career\Code\full projects\whitelabel\wl-userIdentity\target\classes started by Nishi in C:\Career\Code\full projects\whitelabel\wl-userIdentity)
+2022-12-10T06:20:40.020+05:30  INFO [user-identity-service,,] 15944 --- [main] c.n.w.WlUserIdentityApplication          : The following 1 profile is active: "dev"
+2022-12-10T06:20:41.096+05:30  INFO [user-identity-service,,] 15944 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-10T06:20:41.144+05:30  INFO [user-identity-service,,] 15944 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31 ms. Found 0 JPA repository interfaces.
+2022-12-10T06:20:42.101+05:30  INFO [user-identity-service,,] 15944 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 6001 (http)
+2022-12-10T06:20:42.115+05:30  INFO [user-identity-service,,] 15944 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-10T06:20:42.115+05:30  INFO [user-identity-service,,] 15944 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-12-10T06:20:42.291+05:30  INFO [user-identity-service,,] 15944 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-10T06:20:42.291+05:30  INFO [user-identity-service,,] 15944 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2173 ms
+2022-12-10T06:20:42.451+05:30  INFO [user-identity-service,,] 15944 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-10T06:20:42.631+05:30  INFO [user-identity-service,,] 15944 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4c6a4ffd
+2022-12-10T06:20:42.631+05:30  INFO [user-identity-service,,] 15944 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-10T06:20:42.679+05:30  INFO [user-identity-service,,] 15944 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-10T06:20:42.749+05:30  INFO [user-identity-service,,] 15944 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.5.Final
+2022-12-10T06:20:42.978+05:30  WARN [user-identity-service,,] 15944 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2022-12-10T06:20:43.184+05:30  INFO [user-identity-service,,] 15944 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-12-10T06:20:43.890+05:30  INFO [user-identity-service,,] 15944 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-10T06:20:43.906+05:30  INFO [user-identity-service,,] 15944 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-10T06:20:44.099+05:30  WARN [user-identity-service,,] 15944 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-10T06:20:44.523+05:30  INFO [user-identity-service,,] 15944 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 6001 (http) with context path ''
+2022-12-10T06:20:44.523+05:30  INFO [user-identity-service,,] 15944 --- [main] c.n.w.WlUserIdentityApplication          : Started WlUserIdentityApplication in 5.477 seconds (process running for 7.595)
+2022-12-10T06:21:04.558+05:30  INFO [user-identity-service,,] 15944 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-10T06:21:04.558+05:30  INFO [user-identity-service,,] 15944 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-12-10T06:21:04.582+05:30  INFO [user-identity-service,,] 15944 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-12-10T06:21:06.930+05:30  INFO [user-identity-service,,] 14016 --- [main] c.n.w.WlUserIdentityApplication          : Starting WlUserIdentityApplication using Java 17.0.2 with PID 14016 (C:\Career\Code\full projects\whitelabel\wl-userIdentity\target\classes started by Nishi in C:\Career\Code\full projects\whitelabel\wl-userIdentity)
+2022-12-10T06:21:06.936+05:30  INFO [user-identity-service,,] 14016 --- [main] c.n.w.WlUserIdentityApplication          : The following 1 profile is active: "dev"
+2022-12-10T06:21:07.976+05:30  INFO [user-identity-service,,] 14016 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-10T06:21:08.027+05:30  INFO [user-identity-service,,] 14016 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29 ms. Found 0 JPA repository interfaces.
+2022-12-10T06:21:09.028+05:30  INFO [user-identity-service,,] 14016 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 6001 (http)
+2022-12-10T06:21:09.040+05:30  INFO [user-identity-service,,] 14016 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-10T06:21:09.040+05:30  INFO [user-identity-service,,] 14016 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-12-10T06:21:09.202+05:30  INFO [user-identity-service,,] 14016 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-10T06:21:09.203+05:30  INFO [user-identity-service,,] 14016 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2173 ms
+2022-12-10T06:21:09.447+05:30  INFO [user-identity-service,,] 14016 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-10T06:21:09.702+05:30  INFO [user-identity-service,,] 14016 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4c6a4ffd
+2022-12-10T06:21:09.707+05:30  INFO [user-identity-service,,] 14016 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-10T06:21:09.786+05:30  INFO [user-identity-service,,] 14016 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-10T06:21:09.874+05:30  INFO [user-identity-service,,] 14016 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.5.Final
+2022-12-10T06:21:10.119+05:30  WARN [user-identity-service,,] 14016 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2022-12-10T06:21:10.381+05:30  INFO [user-identity-service,,] 14016 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-12-10T06:21:11.306+05:30  INFO [user-identity-service,,] 14016 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-10T06:21:11.325+05:30  INFO [user-identity-service,,] 14016 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-10T06:21:11.486+05:30  WARN [user-identity-service,,] 14016 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-10T06:21:11.960+05:30  INFO [user-identity-service,,] 14016 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 6001 (http) with context path ''
+2022-12-10T06:21:11.960+05:30  INFO [user-identity-service,,] 14016 --- [main] c.n.w.WlUserIdentityApplication          : Started WlUserIdentityApplication in 5.938 seconds (process running for 7.053)
+2022-12-10T06:24:05.245+05:30  INFO [user-identity-service,,] 14016 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-10T06:24:05.245+05:30  INFO [user-identity-service,,] 14016 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-12-10T06:24:05.261+05:30  INFO [user-identity-service,,] 14016 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-12-10T06:24:08.710+05:30  INFO [user-identity-service,,] 20772 --- [main] c.n.w.WlUserIdentityApplication          : Starting WlUserIdentityApplication using Java 17.0.2 with PID 20772 (C:\Career\Code\full projects\whitelabel\wl-userIdentity\target\classes started by Nishi in C:\Career\Code\full projects\whitelabel\wl-userIdentity)
+2022-12-10T06:24:08.715+05:30  INFO [user-identity-service,,] 20772 --- [main] c.n.w.WlUserIdentityApplication          : The following 1 profile is active: "dev"
+2022-12-10T06:24:09.908+05:30  INFO [user-identity-service,,] 20772 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-10T06:24:09.956+05:30  INFO [user-identity-service,,] 20772 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30 ms. Found 0 JPA repository interfaces.
+2022-12-10T06:24:10.978+05:30  INFO [user-identity-service,,] 20772 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 6001 (http)
+2022-12-10T06:24:10.994+05:30  INFO [user-identity-service,,] 20772 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-10T06:24:10.995+05:30  INFO [user-identity-service,,] 20772 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-12-10T06:24:11.172+05:30  INFO [user-identity-service,,] 20772 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-10T06:24:11.173+05:30  INFO [user-identity-service,,] 20772 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2351 ms
+2022-12-10T06:24:11.408+05:30  INFO [user-identity-service,,] 20772 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-10T06:24:11.709+05:30  INFO [user-identity-service,,] 20772 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4c6a4ffd
+2022-12-10T06:24:11.714+05:30  INFO [user-identity-service,,] 20772 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-10T06:24:11.786+05:30  INFO [user-identity-service,,] 20772 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-10T06:24:11.879+05:30  INFO [user-identity-service,,] 20772 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.5.Final
+2022-12-10T06:24:12.114+05:30  WARN [user-identity-service,,] 20772 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2022-12-10T06:24:12.431+05:30  INFO [user-identity-service,,] 20772 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-12-10T06:24:13.886+05:30  INFO [user-identity-service,,] 20772 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-10T06:24:13.909+05:30  INFO [user-identity-service,,] 20772 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-10T06:24:14.199+05:30  WARN [user-identity-service,,] 20772 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-10T06:24:14.987+05:30  INFO [user-identity-service,,] 20772 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 6001 (http) with context path ''
+2022-12-10T06:24:15.005+05:30  INFO [user-identity-service,,] 20772 --- [main] c.n.w.WlUserIdentityApplication          : Started WlUserIdentityApplication in 7.199 seconds (process running for 8.247)
+2022-12-10T06:24:30.944+05:30  INFO [user-identity-service,,] 20772 --- [http-nio-6001-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-10T06:24:30.947+05:30  INFO [user-identity-service,,] 20772 --- [http-nio-6001-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-10T06:24:30.950+05:30  INFO [user-identity-service,,] 20772 --- [http-nio-6001-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-12-10T06:24:31.162+05:30  INFO [user-identity-service,,] 20772 --- [http-nio-6001-exec-1] c.n.w.controller.UserController          : UserController.saveUser() invoked.
+2022-12-10T06:24:31.162+05:30  INFO [user-identity-service,,] 20772 --- [http-nio-6001-exec-1] c.n.w.service.impl.UserServiceImpl       : UserServiceImpl.login() invoked.
+2022-12-10T06:24:31.163+05:30  INFO [user-identity-service,,] 20772 --- [http-nio-6001-exec-1] c.n.w.s.business.UserBusinessService     : UserBusinessService.login()
+2022-12-10T06:24:31.164+05:30  INFO [user-identity-service,,] 20772 --- [http-nio-6001-exec-1] c.n.wluserIdentity.dao.impl.UserDaoImpl  : UserDaoImpl.getAllUsers() invoked
+2022-12-10T06:24:31.463+05:30  INFO [user-identity-service,,] 20772 --- [http-nio-6001-exec-1] c.n.w.service.impl.UserServiceImpl       : UserDto retrieved successfully---------[UserDto(userId=1, userRegNo=U01, userName=nimesha, contactNo=3453454, email=abc@dsd.com, password=12345, isActive=true), UserDto(userId=2, userRegNo=U02, userName=Nimesha, contactNo=2423423, email=gfr@02.com, password=12345, isActive=null)]
+2022-12-10T06:24:54.024+05:30  INFO [user-identity-service,,] 20772 --- [http-nio-6001-exec-5] c.n.w.controller.UserController          : UserController.saveUser() invoked.
+2022-12-10T06:24:54.024+05:30  INFO [user-identity-service,,] 20772 --- [http-nio-6001-exec-5] c.n.w.service.impl.UserServiceImpl       : UserServiceImpl.saveUser() invoked.
+2022-12-10T06:24:54.024+05:30  INFO [user-identity-service,,] 20772 --- [http-nio-6001-exec-5] c.n.w.s.business.UserBusinessService     : UserBusinessService.saveUser() invoked.
+2022-12-10T06:24:54.031+05:30  INFO [user-identity-service,,] 20772 --- [http-nio-6001-exec-5] c.n.wluserIdentity.dao.impl.UserDaoImpl  : UserDaoImpl.saveUser invoked
+2022-12-10T06:24:54.078+05:30  INFO [user-identity-service,,] 20772 --- [http-nio-6001-exec-5] c.n.wluserIdentity.dao.impl.UserDaoImpl  : savedUserDto------------------UserDto(userId=3, userRegNo=U02, userName=Nimesha, contactNo=2423423, email=null, password=12345, isActive=null)
+2022-12-10T06:24:54.092+05:30  INFO [user-identity-service,,] 20772 --- [http-nio-6001-exec-5] c.n.w.service.impl.UserServiceImpl       : UserDto Saved successfully---------UserDto(userId=3, userRegNo=U02, userName=Nimesha, contactNo=2423423, email=null, password=12345, isActive=null)
+2022-12-10T06:24:59.110+05:30  INFO [user-identity-service,,] 20772 --- [http-nio-6001-exec-6] c.n.w.controller.UserController          : UserController.saveUser() invoked.
+2022-12-10T06:24:59.113+05:30  INFO [user-identity-service,,] 20772 --- [http-nio-6001-exec-6] c.n.w.service.impl.UserServiceImpl       : UserServiceImpl.login() invoked.
+2022-12-10T06:24:59.113+05:30  INFO [user-identity-service,,] 20772 --- [http-nio-6001-exec-6] c.n.w.s.business.UserBusinessService     : UserBusinessService.login()
+2022-12-10T06:24:59.114+05:30  INFO [user-identity-service,,] 20772 --- [http-nio-6001-exec-6] c.n.wluserIdentity.dao.impl.UserDaoImpl  : UserDaoImpl.getAllUsers() invoked
+2022-12-10T06:24:59.116+05:30  INFO [user-identity-service,,] 20772 --- [http-nio-6001-exec-6] c.n.w.service.impl.UserServiceImpl       : UserDto retrieved successfully---------[UserDto(userId=1, userRegNo=U01, userName=nimesha, contactNo=3453454, email=abc@dsd.com, password=12345, isActive=true), UserDto(userId=2, userRegNo=U02, userName=Nimesha, contactNo=2423423, email=gfr@02.com, password=12345, isActive=null), UserDto(userId=3, userRegNo=U02, userName=Nimesha, contactNo=2423423, email=null, password=12345, isActive=null)]
+2022-12-10T06:25:13.097+05:30  INFO [user-identity-service,,] 20772 --- [http-nio-6001-exec-9] c.n.w.controller.UserController          : UserController.login() invoked.
+2022-12-10T06:25:13.097+05:30  INFO [user-identity-service,,] 20772 --- [http-nio-6001-exec-9] c.n.w.service.impl.UserServiceImpl       : UserServiceImpl.login() invoked.
+2022-12-10T06:25:13.097+05:30  INFO [user-identity-service,,] 20772 --- [http-nio-6001-exec-9] c.n.w.s.business.UserBusinessService     : UserBusinessService.login()
+2022-12-10T06:25:13.098+05:30  INFO [user-identity-service,,] 20772 --- [http-nio-6001-exec-9] c.n.wluserIdentity.dao.impl.UserDaoImpl  : UserDaoImpl.getUserByUserNameAndPassword() invoked
+2022-12-10T06:25:13.129+05:30 ERROR [user-identity-service,,] 20772 --- [http-nio-6001-exec-9] c.n.w.service.impl.UserServiceImpl       : Exception occurs while retrieving users.
+
+org.springframework.dao.InvalidDataAccessApiUsageException: org.hibernate.QueryException: Ordinal parameter not bound : null
+	at org.springframework.orm.jpa.EntityManagerFactoryUtils.convertJpaAccessExceptionIfPossible(EntityManagerFactoryUtils.java:371) ~[spring-orm-6.0.2.jar:6.0.2]
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:235) ~[spring-orm-6.0.2.jar:6.0.2]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:550) ~[spring-orm-6.0.2.jar:6.0.2]
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61) ~[spring-tx-6.0.2.jar:6.0.2]
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:242) ~[spring-tx-6.0.2.jar:6.0.2]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:152) ~[spring-tx-6.0.2.jar:6.0.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.2.jar:6.0.2]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752) ~[spring-aop-6.0.2.jar:6.0.2]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:703) ~[spring-aop-6.0.2.jar:6.0.2]
+	at com.nishiProductions.wluserIdentity.dao.impl.UserDaoImpl$$SpringCGLIB$$0.getUserByUserNameAndPassword(<generated>) ~[classes/:na]
+	at com.nishiProductions.wluserIdentity.service.business.UserBusinessService.login(UserBusinessService.java:31) ~[classes/:na]
+	at com.nishiProductions.wluserIdentity.service.impl.UserServiceImpl.login(UserServiceImpl.java:74) ~[classes/:na]
+	at com.nishiProductions.wluserIdentity.controller.UserController.login(UserController.java:40) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207) ~[spring-web-6.0.2.jar:6.0.2]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152) ~[spring-web-6.0.2.jar:6.0.2]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-6.0.2.jar:6.0.2]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884) ~[spring-webmvc-6.0.2.jar:6.0.2]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797) ~[spring-webmvc-6.0.2.jar:6.0.2]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.0.2.jar:6.0.2]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1080) ~[spring-webmvc-6.0.2.jar:6.0.2]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:973) ~[spring-webmvc-6.0.2.jar:6.0.2]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003) ~[spring-webmvc-6.0.2.jar:6.0.2]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:906) ~[spring-webmvc-6.0.2.jar:6.0.2]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:731) ~[tomcat-embed-core-10.1.1.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:880) ~[spring-webmvc-6.0.2.jar:6.0.2]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814) ~[tomcat-embed-core-10.1.1.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223) ~[tomcat-embed-core-10.1.1.jar:10.1.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.1.jar:10.1.1]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-10.1.1.jar:10.1.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.1.jar:10.1.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.1.jar:10.1.1]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.2.jar:6.0.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.2.jar:6.0.2]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.1.jar:10.1.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.1.jar:10.1.1]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.2.jar:6.0.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.2.jar:6.0.2]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.1.jar:10.1.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.1.jar:10.1.1]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.2.jar:6.0.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.2.jar:6.0.2]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.1.jar:10.1.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.1.jar:10.1.1]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-10.1.1.jar:10.1.1]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-10.1.1.jar:10.1.1]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-10.1.1.jar:10.1.1]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119) ~[tomcat-embed-core-10.1.1.jar:10.1.1]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-10.1.1.jar:10.1.1]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-10.1.1.jar:10.1.1]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) ~[tomcat-embed-core-10.1.1.jar:10.1.1]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400) ~[tomcat-embed-core-10.1.1.jar:10.1.1]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-10.1.1.jar:10.1.1]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861) ~[tomcat-embed-core-10.1.1.jar:10.1.1]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1739) ~[tomcat-embed-core-10.1.1.jar:10.1.1]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.1.jar:10.1.1]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.1.jar:10.1.1]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.1.jar:10.1.1]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.1.jar:10.1.1]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+Caused by: java.lang.IllegalArgumentException: org.hibernate.QueryException: Ordinal parameter not bound : null
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:141) ~[hibernate-core-6.1.5.Final.jar:6.1.5.Final]
+	at org.hibernate.query.spi.AbstractSelectionQuery.getSingleResult(AbstractSelectionQuery.java:466) ~[hibernate-core-6.1.5.Final.jar:6.1.5.Final]
+	at org.hibernate.query.sqm.internal.QuerySqmImpl.getSingleResult(QuerySqmImpl.java:1062) ~[hibernate-core-6.1.5.Final.jar:6.1.5.Final]
+	at com.nishiProductions.wluserIdentity.dao.impl.UserDaoImpl.getUserByUserNameAndPassword(UserDaoImpl.java:60) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343) ~[spring-aop-6.0.2.jar:6.0.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.0.2.jar:6.0.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.0.2.jar:6.0.2]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752) ~[spring-aop-6.0.2.jar:6.0.2]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-6.0.2.jar:6.0.2]
+	... 57 common frames omitted
+Caused by: org.hibernate.QueryException: Ordinal parameter not bound : null
+	at org.hibernate.query.internal.QueryParameterBindingsImpl.lambda$validate$0(QueryParameterBindingsImpl.java:138) ~[hibernate-core-6.1.5.Final.jar:6.1.5.Final]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.hibernate.query.internal.ParameterMetadataImpl.visitParameters(ParameterMetadataImpl.java:193) ~[hibernate-core-6.1.5.Final.jar:6.1.5.Final]
+	at org.hibernate.query.spi.ParameterMetadataImplementor.visitRegistrations(ParameterMetadataImplementor.java:29) ~[hibernate-core-6.1.5.Final.jar:6.1.5.Final]
+	at org.hibernate.query.internal.QueryParameterBindingsImpl.validate(QueryParameterBindingsImpl.java:131) ~[hibernate-core-6.1.5.Final.jar:6.1.5.Final]
+	at org.hibernate.query.spi.AbstractSelectionQuery.beforeQuery(AbstractSelectionQuery.java:382) ~[hibernate-core-6.1.5.Final.jar:6.1.5.Final]
+	at org.hibernate.query.spi.AbstractSelectionQuery.list(AbstractSelectionQuery.java:360) ~[hibernate-core-6.1.5.Final.jar:6.1.5.Final]
+	at org.hibernate.query.sqm.internal.QuerySqmImpl.list(QuerySqmImpl.java:1032) ~[hibernate-core-6.1.5.Final.jar:6.1.5.Final]
+	at org.hibernate.query.spi.AbstractSelectionQuery.getSingleResult(AbstractSelectionQuery.java:457) ~[hibernate-core-6.1.5.Final.jar:6.1.5.Final]
+	... 68 common frames omitted
+
+2022-12-10T06:45:33.924+05:30  INFO [user-identity-service,,] 20772 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-10T06:45:33.937+05:30  INFO [user-identity-service,,] 20772 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-12-10T06:45:33.956+05:30  INFO [user-identity-service,,] 20772 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
