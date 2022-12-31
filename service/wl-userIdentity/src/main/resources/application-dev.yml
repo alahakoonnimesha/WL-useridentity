@@ -5,6 +5,11 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password: root
-#  jpa:
-#    hibernate:
-#      ddl-auto: create
+  #  jpa:
+  #    hibernate:
+  #      ddl-auto: create
+  jpa:
+    show_sql: true
+
+jwt:
+  secret: xyz

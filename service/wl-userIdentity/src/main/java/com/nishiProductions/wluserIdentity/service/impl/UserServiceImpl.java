@@ -10,6 +10,7 @@ import com.nishiProductions.wluserIdentity.util.ServiceUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
 import java.util.List;
 
 @Service
@@ -97,6 +98,28 @@ public class UserServiceImpl implements UserService {
             if (retrievedUserDtoList != null) {
                 log.info("UserDto retrieved successfully---------{}", retrievedUserDtoList);
                 responseDto = serviceUtil.getServiceResponse(retrievedUserDtoList);
+            } else {
+                log.info("Unable to retrieve all users.");
+                responseDto = serviceUtil.getErrorServiceResponse(
+                        ApplicationMessageConstants.ServiceErrorMessages.ERR_RETRIEVE_ALL_USERS);
+            }
+        } catch (Exception e) {
+            log.error("Exception occurs while retrieving users.", e);
+            responseDto = serviceUtil.getExceptionServiceResponseByProperties(
+                    ApplicationMessageConstants.ServiceErrorMessages.EX_RETRIEVE_ALL_USERS);
+        }
+        return responseDto;
+    }
+
+    @Override
+    public ResponseDto getUserByEmail(String email) {
+        log.info("UserServiceImpl.getUserByEmail() invoked.");
+        ResponseDto responseDto = null;
+        try {
+            UserDto retrievedUserDto = userBusinessService.getUserByEmail(email);
+            if (retrievedUserDto != null) {
+                log.info("UserDto retrieved successfully---------{}", retrievedUserDto);
+                responseDto = serviceUtil.getServiceResponse(retrievedUserDto);
             } else {
                 log.info("Unable to retrieve all users.");
                 responseDto = serviceUtil.getErrorServiceResponse(

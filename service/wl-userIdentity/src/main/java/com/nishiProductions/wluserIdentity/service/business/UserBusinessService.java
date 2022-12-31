@@ -35,4 +35,9 @@ public class UserBusinessService {
         log.info("UserBusinessService.login()");
         return userDao.getAllUsers();
     }
+
+    public UserDto getUserByEmail(String email) {
+        log.info("UserBusinessService.getUserByEmail()");
+        return userDao.getUserByEmail(email);
+    }
 }

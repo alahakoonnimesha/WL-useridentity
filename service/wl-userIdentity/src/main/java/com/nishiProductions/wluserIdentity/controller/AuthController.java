@@ -1,7 +1,8 @@
 package com.nishiProductions.wluserIdentity.controller;
 
-import com.nishiProductions.wluserIdentity.dto.UserDto;
-import com.nishiProductions.wluserIdentity.service.AuthService;
+import com.nishiProductions.wluserIdentity.dto.JwtRequestDto;
+import com.nishiProductions.wluserIdentity.dto.ResponseDto;
+import com.nishiProductions.wluserIdentity.service.JwtUserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -15,11 +16,11 @@ import org.springframework.web.bind.annotation.RestController;
 public class AuthController {
 
     @Autowired
-    AuthService authService;
+    JwtUserService jwtUserService;
 
-    @RequestMapping(value = "/authenticate", method = RequestMethod.GET)
-    public UserDto authenticate(@RequestBody UserDto userDto){
-        log.info("-------------AuthController--------------",userDto);
-        return authService.authenticate(userDto);
+    @RequestMapping(value = "/authenticate", method = RequestMethod.POST)
+    public ResponseDto authenticate(@RequestBody JwtRequestDto jwtRequestDto) {
+        log.info("-------------AuthController--------------", jwtRequestDto);
+        return jwtUserService.authenticate(jwtRequestDto);
     }
 }

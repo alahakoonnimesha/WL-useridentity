@@ -24,4 +24,7 @@ public class User {
     private String password;
     @Column(name = "is_active")
     private Boolean isActive;
+    @JoinColumn(name = "user_type_id", referencedColumnName = "user_type_id")
+    @ManyToOne
+    private UserType userType;
 }

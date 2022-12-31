@@ -12,4 +12,8 @@ public interface UserDao {
     UserDto getUserByUserNameAndPassword(LoginRequestDto loginRequestDto);
 
     List<UserDto> getAllUsers();
+
+    UserDto findByEmailAndIsActiveIsTrueAndIsApprovedTrueAndIsLockedFalseOrNullAndIsVerifiedTrue(String email);
+
+    UserDto getUserByEmail(String email);
 }

@@ -14,4 +14,6 @@ public interface UserService {
     ResponseDto login(LoginRequestDto loginRequestDto);
 
     ResponseDto getAllUsers();
+
+    ResponseDto getUserByEmail(String email);
 }

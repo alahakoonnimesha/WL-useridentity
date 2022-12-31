@@ -17,6 +17,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
+
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -86,5 +87,57 @@ public class UserDaoImpl implements UserDao {
 
         }
         return retrievedUserDtoList;
+    }
+
+    @Override
+    public UserDto findByEmailAndIsActiveIsTrueAndIsApprovedTrueAndIsLockedFalseOrNullAndIsVerifiedTrue(String email) {
+        log.info("UserDaoImpl.findByEmailAndIsActiveIsTrueAndIsApprovedTrueAndIsLockedFalseOrNullAndIsVerifiedTrue() invoked");
+        User user = null;
+        UserDto retrievedUserDto = null;
+
+        CriteriaBuilder cb = entityManager.getCriteriaBuilder();
+        CriteriaQuery<User> cq = cb.createQuery(User.class);
+
+        Root<User> rootUser = cq.from(User.class);
+        Predicate emailPredicate = cb.equal(rootUser.get("email"), email);
+        Predicate isActiveTruePredicate = cb.equal(rootUser.get("isActive"), Boolean.TRUE);
+        cq.where(emailPredicate, isActiveTruePredicate);
+
+        TypedQuery<User> query = entityManager.createQuery(cq);
+        try {
+            user = query.getSingleResult();
+            if (user != null) {
+                retrievedUserDto = userModelMapper.userToUserDto(user);
+            }
+        } catch (NoResultException e) {
+            log.info("No user returned for email------------------{}", email);
+        }
+        return retrievedUserDto;
+    }
+
+    @Override
+    public UserDto getUserByEmail(String email) {
+        log.info("UserDaoImpl.getUserByEmail() invoked");
+        User user = null;
+        UserDto retrievedUserDto = null;
+        try {
+            CriteriaBuilder cb = entityManager.getCriteriaBuilder();
+            CriteriaQuery<User> cq = cb.createQuery(User.class);
+
+            Root<User> rootUser = cq.from(User.class);
+            Predicate emailPredicate = cb.equal(rootUser.get("email"), email);
+            Predicate isActiveTruePredicate = cb.equal(rootUser.get("isActive"), Boolean.TRUE);
+            cq.where(emailPredicate, isActiveTruePredicate);
+
+            TypedQuery<User> query = entityManager.createQuery(cq);
+
+            user = query.getSingleResult();
+            if (user != null) {
+                retrievedUserDto = userModelMapper.userToUserDto(user);
+            }
+        } catch (NoResultException e) {
+            log.info("No user returned for email------------------{}", email);
+        }
+        return retrievedUserDto;
     }
 }
